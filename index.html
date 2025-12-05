@@ -1,26 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Telugu → English Translator</title>
-  <link rel="stylesheet" href="styles.css">
+    <title>Telugu to English Translator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="container">
-    <h2>Telugu → English Translator</h2>
+    <div class="container">
+        <h2>Telugu → English Translator</h2>
 
-    <textarea 
-      id="inputText"
-      placeholder="ఇక్కడ తెలుగు టైప్ చేయండి..."
-    ></textarea>
+        <textarea id="inputText" placeholder="Enter Telugu text here..."></textarea>
 
-    <button onclick="translateText()">Translate</button>
+        <button onclick="translateText()">Translate</button>
 
-    <h3>Output:</h3>
-    <div id="outputBox"></div>
-  </div>
+        <div id="outputText">Output will appear here...</div>
+    </div>
 
-  <script src="index.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
