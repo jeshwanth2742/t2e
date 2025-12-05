@@ -1,25 +1,23 @@
 const dictionary = {
-    "హలో": "Hello",
-    "నమస్తే": "Hello",
-    "నీ పేరు ఏమిటి": "What is your name",
-    "నాకు సహాయం కావాలి": "I need help",
-    "ధన్యవాదాలు": "Thank you",
-    "శుభోదయం": "Good Morning",
-    "శుభరాత్రి": "Good Night",
-    "నేను బాగున్నాను": "I am fine",
-    "మీరు ఎలా ఉన్నారు": "How are you",
-    "ప్రేమ": "Love",
-    "ఆహారం": "Food",
-    "నీరు": "Water"
+  "హలో": "Hello",
+  "నమస్తే": "Hello",
+  "ప్రేమ": "Love",
+  "ఆహారం": "Food",
+  "నీరు": "Water",
+  "నేను బాగున్నాను": "I am fine",
+  "మీరు ఎలా ఉన్నారు": "How are you",
+  "ధన్యవాదాలు": "Thank you"
 };
 
-function translateText() {
-    let input = document.getElementById("inputText").value.trim();
-    let output = document.getElementById("outputText");
+document.getElementById("btn").addEventListener("click", function() {
 
-    if (dictionary[input]) {
-        output.innerText = dictionary[input];
-    } else {
-        output.innerText = "Translation not found in dictionary.";
-    }
-}
+  const input = document.getElementById("inputText").value.trim();
+  const output = document.getElementById("outputText");
+
+  if (dictionary[input]) {
+    output.innerText = dictionary[input];
+  } else {
+    output.innerText = "Word not found in dictionary";
+  }
+
+});
