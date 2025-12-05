@@ -1,41 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
   <title>Telugu → English Translator</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="container">
-    <h1>Telugu → English Translator</h1>
 
-    <label for="inputText">Enter Telugu text</label>
+  <div class="container">
+    <h2>Telugu → English Translator</h2>
+
     <textarea 
-      id="inputText" 
-      class="textarea" 
-      rows="5"
-      placeholder="ఇక్కడ తెలుగు వాక్యాన్ని టైప్ చేయండి..."
+      id="inputText"
+      placeholder="ఇక్కడ తెలుగు టైప్ చేయండి..."
     ></textarea>
 
-    <div class="controls">
-      <label for="backend">Backend</label>
-      <select id="backend" class="input small">
-        <option value="hf">HuggingFace</option>
-        <option value="google">Google (if enabled)</option>
-      </select>
+    <button onclick="translateText()">Translate</button>
 
-      <button id="translateBtn" class="btn">Translate</button>
-      <button id="copyBtn" class="btn secondary">Copy Output</button>
-    </div>
+    <h3>Output:</h3>
+    <div id="outputBox"></div>
+  </div>
 
-    <section class="output-card">
-      <h2>Output</h2>
-      <div id="output" class="output">— translation will appear here —</div>
-      <div id="meta" class="meta"></div>
-    </section>
-  </main>
-
-  <script src="index.js" type="module"></script>
+  <script src="index.js"></script>
 </body>
 </html>
