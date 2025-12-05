@@ -14,4 +14,35 @@
     <select id="preset" class="input">
       <option value="నమస్తే, మీరు ఎలా ఉన్నారు?">నమస్తే, మీరు ఎలా ఉన్నారు? — (Hello, how are you?)</option>
       <option value="నేను గిరిజనప్పలుకు వెళ్తున్నాను">నేను గిరిజనప్పలుకు వెళ్తున్నాను — (I'm going to the market)</option>
-      <option value="ఇది నా మొబైల్ నంబర్.">ఇది నా మొబైల్ నంబర్. — (This i
+      <option value="ఇది నా మొబైల్ నంబర్.">ఇది నా మొబైల్ నంబర్. — (This is my mobile number.)</option>
+      <option value="రేపు కలుసుకుంటాం">రేపు కలుసుకుంటాం — (See you tomorrow)</option>
+    </select>
+
+    <label for="inputText">Or edit text</label>
+    <textarea id="inputText" class="textarea" rows="4"></textarea>
+
+    <div class="controls">
+      <label for="backend">Backend</label>
+      <select id="backend" class="input small">
+        <option value="hf">HuggingFace (recommended)</option>
+        <option value="google">googletrans (if enabled)</option>
+      </select>
+
+      <button id="translateBtn" class="btn">Translate</button>
+      <button id="copyBtn" class="btn secondary">Copy Output</button>
+    </div>
+
+    <section class="output-card">
+      <h2>Output</h2>
+      <div id="output" class="output">— translation will appear here —</div>
+      <div id="meta" class="meta"></div>
+    </section>
+
+    <footer class="footnote">
+      If your API is hosted elsewhere, update <code>API_URL</code> in <code>index.js</code>.
+    </footer>
+  </main>
+
+  <script src="index.js" type="module"></script>
+</body>
+</html>
